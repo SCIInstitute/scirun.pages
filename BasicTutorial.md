@@ -2,14 +2,16 @@
 title: Basic Tutorial
 category: info
 tags: tutorial
+layout: default_toc
 ---
 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
 </script>
-<link rel="stylesheet" href="css/modest.css">
+<link rel="stylesheet" href="css/main.css">
 
-### Contents
+
+<!-- ### Contents
   - [1 SCIRun Overview](#1--scirun-overview)  
     + [1.1 Software requirements](#11--software-requirements)   
   - [2 Simple Dataflow Network](#2--simple-dataflow-network)  
@@ -24,7 +26,7 @@ tags: tutorial
     + [3.2 Isosurface](#32--isosurface)  
     + [3.3 Slice Field](#33--slice-field)  
     + [3.4 Clip Field](#34--clip-field)  
-      - [3.4.1 Extract Boundary](#341--extract-boundary)  
+      - [3.4.1 Extract Boundary](#341--extract-boundary)   -->
 
 ## 1  SCIRun Overview
 
@@ -160,7 +162,7 @@ Create and manipulate a structured mesh type in this exercise. Start by creating
 Generate the isosurface by instantiating and connecting an ExtractSimpleIsosurface module to CalculateFieldData (<a href="#extractisosurf2">Figure 3.3</a>). Adjust the isovalue within the ExtractSimpleIsosurface UI so that the isosurface can be visualized (<a href="#conncolormap">Figure 3.4</a>). Add a color map and visualize the isosurface as in [section 2.3](#23--isosurface) (<a href="#viewdefaultisosurf">Figure 3.5</a>). Show the mesh bounding box as in [section 2.2](#22--show-bounding-box) (<a href="#changeisoval2">Figure 3.6</a>).
 
 <figure id="extractisosurf2">
-  <img src="BasicTutorial_figures/extractiso2.png" alt="Extract an 
+  <img src="BasicTutorial_figures/extractiso2.png" alt="Extract an
   from the field data."/>
   <figcaption>Figure 3.3 Extract an isosurface from the field data.</figcaption>
 </figure>

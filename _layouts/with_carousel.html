@@ -8,9 +8,14 @@
         <title>{{ site.title }}{% if page.title %} : {{ page.title }}{% endif %}</title>
         <meta name="description" content="{{ site.subtitle }}">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/carousel.css">
+
     </head>
     <body>
 
@@ -30,7 +35,11 @@
                 </div>
               {% endif %}
             </div>
-
+            <div class="row">
+                  <div id="carousel" class="col-sm-12">
+                      {% include carousel.html %}
+                  </div>
+            </div>
             <div class="row">
                 <div id="content" class="col-sm-12">
                     {{ content }}

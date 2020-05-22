@@ -11,6 +11,9 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/side_nav.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/modules.css">
+
     </head>
     <body>
 
@@ -32,7 +35,12 @@
             </div>
 
             <div class="row">
-                <div id="content" class="col-sm-12">
+                <div id="table-of-contents" class"col-sm-3">
+                    <nav id= "toc" class="nav flex-column nav-pills">
+                      {% include toc.html html=content h_max=2 h_min=2 id="side_nav" item_class="nav-link"%}
+                    </nav>
+                </div>
+                <div id="content" class="col-sm-9">
                     {{ content }}
                 </div>
             </div>

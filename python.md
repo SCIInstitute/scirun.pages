@@ -2,7 +2,9 @@
 title: Python API 0.2
 category: info
 tags: python
+layout: default
 ---
+<link rel="stylesheet" href="css/main.css">
 
 The API contains global functions for network editing, file management, module state modification, and data object extraction and insertion.
 
@@ -38,13 +40,13 @@ Some functions are not available for execution within the `InterfaceWithPython` 
 
 ### Module state editing
 * `scirun_get_module_state("ModuleID", "StateVariableName")`
-  * Returns the value of a the specified module state variable.
+  * Returns the value of the specified module state variable.
 * `scirun_set_module_state("ModuleID", "StateVariableName", value)`
   * Sets the specified module state variable's value.
 * `scirun_dump_module_state("ModuleID")`
   * Returns a dictionary with the entire state of the specified module.
 * `scirun_get_module_transient_state("ModuleID", "StateVariableName")`
-  * Returns the value of a the specified module transient state variable.
+  * Returns the value of the specified module transient state variable.
 * `scirun_set_module_transient_state("ModuleID", "StateVariableName", value)`
   * Sets the specified module transient state variable's value. Used to pass data values (strings, matrices, fields [coming soon]) back to modules.
 
@@ -67,9 +69,9 @@ Some functions are not available for execution within the `InterfaceWithPython` 
      * `field = inputField1` will extract a field object from the input port associated with `inputField1`
      * `outputString1 = "string concat " + inputString1` Input/Output can be combined on the same line.
   * Note: for output variable assignment, make sure to include spaces around the `=`.
-  
+
   ###  InterfaceWithPython Top-Level Script
-  
+
 In the InterfaceWithPython there is a "Top-Level Script" tab which allows users to run matlab code in a broader scope on execution of the InterfaceWithPython Module.  This is helpful if there are variables or modules that are costly to compute or load, yet are used in more than one InterfaceWithPython Module.  The [Matlab engine](#matlab-engine-in-scirun-5-through-python) is one such example.  To launch the matlab engine once per session, use the following code in the top-level script:
 ```
 import matlab.engine
@@ -126,7 +128,7 @@ There can be many directories or many `sys.path.append(...)` calls as needed.  T
 
 If there are module or package paths that need to be set on a network basis (rather than for every network), the InterfaceWithPython module can acheive this with the ["Top-Level Script" Tab](#interfacewithpython-top-level-script).  This tab will execute the code in this tab on a global scale (until SCIRun is closed), so a script similar to the triggered events example will be saved and executed only for the network.
 
-  
+
 ## Matlab engine in SCIRun 5 (through python)
 
 In SCIRun 5, Matlab code and functions can be run using the matlab engine for python in the python console or python interface.  To do so, make sure that the matlab engine is installed (previous section).
@@ -178,10 +180,9 @@ The Macro toolbar will need to be visible to access this feature.
 
 ## Running Python Scripts
 
-Python scripts can be used for many things in SCIRun, from building networks to batch executing data.  To run a script saved to disk within SCIRun, there are a couple options.  There is a run script option (looks like a magic wand), which is part of the advanced toolbar. This option will clear any network when a script is run, so it is great for runing scripts that build and execute networks.  Scripts can also be called as a command line input with the `-s` or `-S` flags.  This option is similar to the run script tool, but it allows for passing script arguments after the script filename.  For example, in OS X:
+Python scripts can be used for many things in SCIRun, from building networks to batch executing data.  To run a script saved to disk within SCIRun, there are a couple options.  There is a run script option (looks like a magic wand), which is part of the advanced toolbar. This option will clear any network when a script is run, so it is great for running scripts that build and execute networks.  Scripts can also be called as a command line input with the `-s` or `-S` flags.  This option is similar to the run script tool, but it allows for passing script arguments after the script filename.  For example, in OS X:
 `/Applications/SCIRun.app/Contents/MacOS/SCIRun -s *script_filename.py* *arg1*`.
 
 To run a script within SCIRun without clearing the network, open and execute the script in the SCIRun python console:
 `exec(open('*path_to_script/filename.py*').read())`.
 This syntax can also be used in SCIRun's interactive mode (`-i` flag from the command line).
-

@@ -11,7 +11,7 @@ disqus_shortname: ''
 # if you use google analytics, add your tracking id here
 google_analytics_id: ''
 
-# Enable/show navigation. There are there options:
+# Enable/show navigation. There are three options:
 #   0 - always hide
 #   1 - always show
 #   2 - show only if posts are present
@@ -22,18 +22,19 @@ codeurl: 'https://github.com/SCIInstitute/SCIRun'
 
 # Default categories (in order) to appear in the navigation
 sections: [
-    ['start', 'Getting Started'],
-    ['guide', 'User Guide'],
-    ['ref', 'Reference'],
-    ['tutorials', 'Tutorials'],
-    ['help', 'Help'],
-    ['dev', 'Developers'],
-    ['post', 'Posts']
+    ['start.html', 'Getting Started'],
+    ['modules.html', "Modules"],
+    ['user.html', 'User Documentation'],
+    ['dev.html', 'Developer Documentation'],
+    ['specs.html', 'Specifications'],
+    ['support.html', 'Support'],
+    ['faq.html', 'FAQ'],
+    ['other.html', 'Other Links']
 ]
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
-baseurl: ''
+baseurl: '/scirun.pages'
 
 # Dates are not included in permalinks
 permalink: none
@@ -74,6 +75,6 @@ port:         9001
 host:         127.0.0.1
 
 description: Web pages for SCIRun
-google_analytics: 
+google_analytics:
 show_downloads: true
 theme: jekyll-theme-slate

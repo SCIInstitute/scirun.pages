@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: with_carousel
 title: "SCIRun 5 Documentation"
 ---
-
-![SCIRun Logo](http://www.sci.utah.edu/images/software/SCIRun/scirun.png)
+<!-- ![SCIRun Logo](http://www.sci.utah.edu/images/software/SCIRun/scirun.png) -->
 
 ### SCIRun 5.0
 
@@ -12,18 +11,3 @@ title: "SCIRun 5 Documentation"
 SCIRun 5 is a complete rewrite of the GUI front end and graphical components of SCIRun 4, including a more stable and efficient middle layer, with support for Python scripting.
 
 *Warning! SCIRun 5 is beta software, you may use for real science but beware of instability.*
-
-- [Build](build.html)
-- [Module Reference](modules.html)
-- [Python API 0.2](python.html)
-- [Basic Tutorial](BasicTutorial.html)
-- [SCIRun5 Module Generation](SCIRun5ModuleGeneration.html)
-
-Doc v1.0c
- - [Build](build.html)
- - [Module Reference](modules.html)
- - [Python API 0.2](python.html)
- - [Basic Tutorial](BasicTutorial.html)
- - [SCIRun5 Module Generation](SCIRun5ModuleGeneration.html)
-
-
