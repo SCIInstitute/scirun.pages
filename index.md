@@ -1,6 +1,7 @@
 ---
 layout: with_carousel
 title: "SCIRun 5 Documentation"
+redirect_to: https://scirun.readthedocs.io/en/latest/
 ---
 <!-- ![SCIRun Logo](http://www.sci.utah.edu/images/software/SCIRun/scirun.png) -->
 

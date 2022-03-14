@@ -45,6 +45,10 @@ highlighter: rouge
 # Since these are pages, it doesn't really matter
 future: true
 
+#
+plugins:
+  - jekyll-redirect-from
+
 # Exclude non-site files
 exclude: ['bin', 'README.md']
 
