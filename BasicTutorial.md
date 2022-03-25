@@ -3,6 +3,7 @@ title: Basic Tutorial
 category: info
 tags: tutorial
 layout: default_toc
+redirect_to: https://scirun.readthedocs.io/en/latest/user_doc/BasicTutorial.html
 ---
 
 <script type="text/javascript" async

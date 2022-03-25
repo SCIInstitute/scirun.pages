@@ -3,6 +3,7 @@ title: SCIRun Module Documentation
 category: info
 tags: module
 layout: modules_toc
+redirect_to: https://scirun.readthedocs.io/en/latest/
 ---
 
 <script async
