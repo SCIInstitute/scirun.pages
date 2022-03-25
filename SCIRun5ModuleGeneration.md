@@ -3,6 +3,7 @@ title: SCIRun Module Generation
 category: developer documentation
 tags: tutorial
 layout: default_toc
+redirect_to: https://scirun.readthedocs.io/en/latest/dev_doc/SCIRun5ModuleGeneration.html
 ---
 
 <script type="text/javascript" async

@@ -3,6 +3,7 @@ title: Build
 category: info
 tags: build
 layout: default_toc
+redirect_to: https://scirun.readthedocs.io/en/latest/start/build.html
 ---
 
 <link rel="stylesheet" href="css/main.css">

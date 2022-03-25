@@ -3,6 +3,7 @@ title: Python API 0.2
 category: info
 tags: python
 layout: default
+redirect_to: https://scirun.readthedocs.io/en/latest/user_doc/python.html
 ---
 <link rel="stylesheet" href="css/main.css">
 
